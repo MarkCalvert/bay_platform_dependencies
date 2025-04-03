@@ -14,3 +14,4 @@ jobs:
     uses: dpc-sdp/github-actions/.github/workflows/tide_build.yml@main
     with:
           module_build: true
+          runner: ubuntu-latest
