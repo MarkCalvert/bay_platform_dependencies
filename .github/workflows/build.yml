@@ -6,11 +6,11 @@ on:
     pull_request:
       branches: [ main ]
   
-        
 jobs:
-
   tide_build:
     name: Tide build
+    permissions:
+      contents: write
     uses: dpc-sdp/github-actions/.github/workflows/tide_build.yml@main
     with:
           module_build: true
