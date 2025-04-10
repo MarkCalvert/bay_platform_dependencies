@@ -1,11 +1,11 @@
 name: Tide Build
 
 on:
-    push:
-      branches: [ main ]
-    pull_request:
-      branches: [ main ]
-  
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
 jobs:
   tide_build:
     name: Tide build
@@ -13,5 +13,5 @@ jobs:
       contents: write
     uses: dpc-sdp/github-actions/.github/workflows/tide_build.yml@main
     with:
-          module_build: true
-          runner: ubuntu-latest
+      module_build: true
+      runner: biggy-tide
